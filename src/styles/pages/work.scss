@@ -1,3 +1,5 @@
+@use "../mixins" as *;
+
 .project {
 	position: relative;
 	height: 100vh;
@@ -110,7 +112,8 @@
 			margin-top: calc(var(--title-margin) * 0.3);
 		}
 
-		ul, ol {
+		ul,
+		ol {
 			margin: calc(var(--title-margin) * 0.5) 0;
 			padding-left: 2rem;
 		}
@@ -132,7 +135,7 @@
 			background-color: rgba(0, 0, 0, 0.05);
 			padding: 0.2rem 0.4rem;
 			border-radius: 4px;
-			font-family: 'Courier New', Courier, monospace;
+			font-family: "Courier New", Courier, monospace;
 			font-size: 0.9em;
 		}
 

@@ -1,12 +1,12 @@
-@import "./typography.scss";
-@import "./reset.scss";
-@import "./vars.scss";
-@import "./mixins.scss";
+@use "./typography";
+@use "./reset";
+@use "./vars";
+@use "./mixins" as *;
 
 // pages
-@import "./pages/home.scss";
-@import "./pages/work.scss";
-@import "./pages/works.scss";
+@use "./pages/home";
+@use "./pages/work";
+@use "./pages/works";
 
 html {
 	font-style: var(--font-default);
@@ -181,7 +181,9 @@ html {
 	background-color: var(--color_main);
 	font-weight: 600;
 	cursor: pointer;
-	transition: width 0.3s ease-out, height 0.4s ease-out;
+	transition:
+		width 0.3s ease-out,
+		height 0.4s ease-out;
 
 	&:hover {
 		// transform: scale(1.1);
